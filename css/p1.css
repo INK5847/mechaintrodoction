@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color:#3F3F3F;
+
+    font-family: "Roboto", sans-serif;
+}
+
+::selection{/*反選文字時的背景跟文字顏色*/
+    background: #3F3F3F;
+    color: rgba(255, 255, 255, 1);
+}
+
+a{
+    text-decoration: none;
+    color: #3F3F3F;
+    display: inline-block;
+}
+
+a:hover{
+    color: #c3c2c2;
+}
+
+/*header*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 200000;
+}
+
+/*menu*/
+.menu{
+    width:80%;
+    margin: 10px auto;
+    /*background:#ffffff;*/
+    display: flex;
+}
+
+/*logo*/
+.logo{
+   /* float: left;
+    width: 120px;*/
+    flex: 0 0 120px;
+    
+}
+
+.logo img{
+    width: 100%;
+    margin: auto;
+    /*background: rgba(255, 255, 255, .5);*/
+	border-radius: 50%;
+}
+
+/*nav*/
+nav{
+    /* float: right;*/
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav a{
+    padding: 50px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*hero*/
+.hero{
+    position: relative;   
+    width: 100%;
+    height: 90vh;
+    /*background:rgba(87, 117, 144, .2);*/
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.hero h1{
+    position: absolute;
+    top:65%;
+	left:50%;
+	transform: translate(-50%, -50%);
+
+    white-space: nowrap;/*不換行*/
+    font-size: 100px;
+    color: #3F3F3F;
+}
+
+.hero p{
+    position: absolute;
+    top:93%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 20px;
+    color: #3F3F3F;
+}
+
+
+/*section*/
+section{
+    display: flex;
+    flex-wrap: wrap;/*讓內容可換行*/
+    gap: 10px;/*間距*/
+    /*clear: both;*/
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+section h1{
+    flex: 0 0 100%;
+    color:#3F3F3F;
+    text-align: center;
+}
+
+.background{
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*card*/
+.card{
+    flex: 0 0 calc((100% - 10px*3) / 4);/*calc是計算式，10px是間距，每排4個就有3個間距要均分*/
+	display:inline-block;
+	width:24.5%;
+	box-sizing:border-box;
+	padding:10px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.card img{
+	width:80%;
+	border-radius:50%;
+    border:solid 2px #3F3F3F;
+    
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+	
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+}
+
+.card:hover img{
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+/*article*/
+article{
+    flex: 0 0 100%;
+	/*width:100%;
+    height: 100%;*/
+	margin:auto;
+    margin-bottom: 30px;
+    /*overflow: hidden;*/
+    border:solid 4px #3F3F3F;
+    border-radius: 50px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+section > a:nth-of-type(2n) article{/*當項目中順序是偶數時，執行下列程式*/
+    flex-direction: row-reverse;/*內容反轉，ex:左右交換*/
+}
+
+article:hover{
+    border:solid 8px #3F3F3F;
+    background:#ECECEC;
+}
+
+.a_left{
+    flex: 1;
+    
+    /*position: relative;
+	float:left;
+	width:50%;
+    height:100%;*/
+}
+
+.a_left img{
+	float:left;
+    width: 100%;
+    height:100%;
+	object-fit: cover;
+    object-position: bottom;
+    
+}
+
+.a_right{
+    flex: 1;
+
+	/*float:left;
+	width:50%;
+    height:100%;*/
+	padding: 4%;
+	box-sizing:border-box;
+	color:#3F3F3F;
+	text-align:left;
+    line-height: 2rem;
+}
+
+.a_right h2{
+    font-size: 2.5rem;
+}
+
+/*footer*/
+footer{
+    clear: both;
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+/*for tablets*/
+@media only screen and (max-width: 1200px) {
+}
+
+/*for mobile*/
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 1.3rem;
+    }
+    /*menu*/
+    .menu{
+        margin: 15px auto;
+        flex-direction: column;/*變垂直排版*/
+    }
+
+    /*logo*/
+    .logo{
+        text-align: center;
+    }
+    .logo img{
+        width: 30%;
+        margin: auto;
+    }
+
+    /*nav*/
+    nav{
+        text-align: center;
+    }
+    nav a{
+        padding: 10px;
+    }
+
+    /*hero*/
+    .hero{
+        height: 40vh;
+        /*background:rgba(87, 117, 144, .2);*/
+        margin-bottom: 80px;
+    }
+    .hero img{
+        /*height: 60%;
+        width: 100%;*/
+        margin-top: 80px;
+    }
+    .hero h1{
+        top: 90%;
+        font-size: 50px;
+        white-space: nowrap;/*不換行*/
+    }
+    .hero p{
+        top:95%;
+        font-size: 12px;
+        white-space: nowrap;/*不換行*/
+        margin-top: 60px;
+    }
+    section{
+        width: 90%;
+    }
+    section h1{
+        margin-bottom: 10px;
+    }
+    .background{
+        margin-bottom: -50px;
+        font-size: 20px;
+    }
+    /*card*/
+    .card{
+        flex: 0 0 calc((100% - 10px*1) / 2);/*calc是計算式，10px是間距，每排2個就有1個間距要均分*/
+    }
+    .card h2{
+        font-size: 1.5rem;
+    }
+    article{
+        flex-direction: column;
+    }
+    section > a:nth-of-type(2n) article{
+        flex-direction: column;
+    }
+
+    .a_right{
+        padding: 6%;
+    }
+    .a_right h2{
+        font-size: 2rem;
+    }
+    .a_right p{
+        font-size: 15px;
+    }
+    footer{
+        font-size: 15px;
+    }
+}

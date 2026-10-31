@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    color:#A43528;
+
+    font-family: "Roboto", sans-serif;
+}
+
+::selection{/*反選文字時的背景跟文字顏色*/
+    background: #E86E65;
+    color: rgba(255, 255, 255, 1);
+}
+
+a{
+    text-decoration: none;
+    color: #A43528;
+    display: inline-block;
+}
+
+a:hover{
+    color: #E86E65;
+}
+
+/*header*/
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 200000;
+}
+
+/*menu*/
+.menu{
+    width:80%;
+    margin: 10px auto;
+    /*background:#ffffff;*/
+    display: flex;
+}
+
+/*logo*/
+.logo{
+   /* float: left;
+    width: 120px;*/
+    flex: 0 0 120px;
+    
+}
+
+.logo img{
+    width: 100%;
+    margin: auto;
+    /*background: rgba(255, 255, 255, .5);*/
+	border-radius: 50%;
+}
+
+/*nav*/
+nav{
+    /* float: right;*/
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav a{
+    padding: 50px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+/*hero*/
+.hero{
+    position: relative;   
+    width: 100%;
+    height: 90vh;
+    /*background:rgba(87, 117, 144, .2);*/
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.hero h1{
+    position: absolute;
+    top:65%;
+	left:50%;
+	transform: translate(-50%, -50%);
+
+    white-space: nowrap;/*不換行*/
+    font-size: 100px;
+    color: #A43528;
+}
+
+/*.hero p{
+    position: absolute;
+    top:93%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 20px;
+    color: #272D87;
+}*/
+
+
+/*section*/
+section{
+    display: flex;
+    flex-wrap: wrap;/*讓內容可換行*/
+    gap: 10px;/*間距*/
+    /*clear: both;*/
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+section h1{
+    flex: 0 0 100%;
+    color:#A43528;
+    text-align: center;
+}
+
+.background{
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/*card*/
+.card1{
+    flex: 0 0 calc((100% - 10px*3) / 4);/*calc是計算式，10px是間距，每排4個就有3個間距要均分*/
+	display:inline-block;
+	width:24.5%;
+	box-sizing:border-box;
+	padding:10px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.card1 img{
+	width:80%;
+	border-radius:50%;
+    border:solid 2px #8C4664;
+
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+	
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+}
+
+.card1:hover img{
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+.card1:hover a{
+    color: #8C4664;
+}
+
+.card2{
+    flex: 0 0 calc((100% - 10px*3) / 4);/*calc是計算式，10px是間距，每排4個就有3個間距要均分*/
+	display:inline-block;
+	width:24.5%;
+	box-sizing:border-box;
+	padding:10px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.card2 img{
+	width:80%;
+	border-radius:50%;
+    border:solid 2px #FF8C9B;
+
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+	
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+}
+
+.card2:hover img{
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+.card2:hover a{
+    color: #FF8C9B;
+}
+
+.card3{
+    flex: 0 0 calc((100% - 10px*3) / 4);/*calc是計算式，10px是間距，每排4個就有3個間距要均分*/
+	display:inline-block;
+	width:24.5%;
+	box-sizing:border-box;
+	padding:10px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.card3 img{
+	width:80%;
+	border-radius:50%;
+    border:solid 2px #64C8F0;
+    
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+	
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+}
+
+.card3:hover img{
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+.card3:hover a{
+    color: #64C8F0;
+}
+
+.card4{
+    flex: 0 0 calc((100% - 10px*3) / 4);/*calc是計算式，10px是間距，每排4個就有3個間距要均分*/
+	display:inline-block;
+	width:24.5%;
+	box-sizing:border-box;
+	padding:10px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.card4 img{
+	width:80%;
+	border-radius:50%;
+    border:solid 2px #FAC31E;
+    
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+	
+	transition: transform 1.5s;
+	-webkit-transition: transform 1.5s;
+}
+
+.card4:hover img{
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+.card4:hover a{
+    color: #FAC31E;
+}
+
+/*article*/
+.article1{
+    flex: 0 0 100%;
+	/*width:100%;
+    height: 100%;*/
+	margin:auto;
+    margin-bottom: 30px;
+    /*overflow: hidden;*/
+    border:solid 4px #A43528;
+    border-radius: 50px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+.article1:hover{
+    border:solid 8px #8C4664;
+    
+}
+
+.article2{
+    flex: 0 0 100%;
+	/*width:100%;
+    height: 100%;*/
+	margin:auto;
+    margin-bottom: 30px;
+    /*overflow: hidden;*/
+    border:solid 4px #A43528;
+    border-radius: 50px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+.article2:hover{
+    border:solid 8px #FF8C9B;
+    
+}
+
+.article3{
+    flex: 0 0 100%;
+	/*width:100%;
+    height: 100%;*/
+	margin:auto;
+    margin-bottom: 30px;
+    /*overflow: hidden;*/
+    border:solid 4px #A43528;
+    border-radius: 50px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+.article3:hover{
+    border:solid 8px #64C8F0;
+    
+}
+
+.article4{
+    flex: 0 0 100%;
+	/*width:100%;
+    height: 100%;*/
+	margin:auto;
+    margin-bottom: 30px;
+    /*overflow: hidden;*/
+    border:solid 4px #A43528;
+    border-radius: 50px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+.article4:hover{
+    border:solid 8px #FAC31E;
+    
+}
+
+.a_left{
+    flex: 1;
+    
+    /*position: relative;
+	float:left;
+	width:50%;
+    height:100%;*/
+}
+
+.a_left img{
+	float:left;
+    width: 100%;
+    height:100%;
+	object-fit: cover;
+    object-position: bottom;
+    
+}
+
+.a_right{
+    flex: 1;
+    position: relative;
+	/*float:left;
+	width:50%;
+    height:100%;*/
+	padding: 4%;
+	box-sizing:border-box;
+	color:#A43528;
+	text-align:justify;
+    line-height: 2rem;
+}
+.moreb{
+	position:absolute;
+	top: 85%;
+	left:80%;/*前三行讓物件置中*/
+	transform: translate(-50%, -50%);/*但對準點是左上角，用這行改錨點至中心點*/
+	
+    border-radius: 30px;
+	background:#A43528;
+	padding:30px;
+	color: #ECECEC;
+
+    opacity:0;
+	transition: opacity 1s;
+	-webkit-transition: opacity 1s; /*前綴詞*/
+	
+	transition-timing-function: ease-in-out;
+	-webkit-transition-timing-function: ease-in-out; /*Safari */
+}
+
+.article1:hover .moreb{
+	opacity:1;
+}
+
+.article2:hover .moreb{
+	opacity:1;
+}
+
+.article3:hover .moreb{
+	opacity:1;
+}
+
+.article4:hover .moreb{
+	opacity:1;
+}
+
+.a_right h2{
+    font-size: 2.5rem;
+    color: #A43528;
+    line-height: 0rem;
+}
+
+.a_right h3{
+    line-height: 1rem;
+    font-size: 1.5rem;
+    color: #E86E65;
+}
+
+
+
+/*footer*/
+footer{
+    clear: both;
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+/*for tablets*/
+@media only screen and (max-width: 1200px) {
+}
+
+/*for mobile*/
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 1.3rem;
+    }
+    /*menu*/
+    .menu{
+        margin: 15px auto;
+        flex-direction: column;/*變垂直排版*/
+    }
+
+    /*logo*/
+    .logo{
+        text-align: center;
+    }
+    .logo img{
+        width: 30%;
+        margin: auto;
+    }
+
+    /*nav*/
+    nav{
+        text-align: center;
+    }
+    nav a{
+        padding: 10px;
+    }
+
+    /*hero*/
+    .hero{
+        height: 40vh;
+        /*background:rgba(87, 117, 144, .2);*/
+        margin-bottom: 80px;
+    }
+    .hero img{
+        /*height: 60%;
+        width: 100%;*/
+        margin-top: 80px;
+    }
+    .hero h1{
+        top: 90%;
+        font-size: 50px;
+        white-space: nowrap;/*不換行*/
+    }
+    .hero p{
+        top:95%;
+        font-size: 12px;
+        white-space: nowrap;/*不換行*/
+        margin-top: 60px;
+    }
+    section{
+        width: 90%;
+    }
+    section h1{
+        margin-bottom: 10px;
+    }
+    .background{
+        margin-bottom: -50px;
+        font-size: 20px;
+    }
+    /*card*/
+    .card1{
+        flex: 0 0 calc((100% - 10px*1) / 2);/*calc是計算式，10px是間距，每排2個就有1個間距要均分*/
+    }
+    .card2{
+        flex: 0 0 calc((100% - 10px*1) / 2);/*calc是計算式，10px是間距，每排2個就有1個間距要均分*/
+    }
+    .card3{
+        flex: 0 0 calc((100% - 10px*1) / 2);/*calc是計算式，10px是間距，每排2個就有1個間距要均分*/
+    }
+    .card4{
+        flex: 0 0 calc((100% - 10px*1) / 2);/*calc是計算式，10px是間距，每排2個就有1個間距要均分*/
+    }
+    .card1 h2{
+        font-size: 1.5rem;
+    }
+    .card2 h2{
+        font-size: 1.5rem;
+    }
+    .card3 h2{
+        font-size: 1.5rem;
+    }
+    .card4 h2{
+        font-size: 1.5rem;
+    }
+
+    .article1{
+        flex-direction: column;
+    }
+    .article2{
+        flex-direction: column;
+    }
+    .article3{
+        flex-direction: column;
+    }
+    .article4{
+        flex-direction: column;
+    }
+
+    .article1:hover .moreb{
+	    opacity:0;
+    }
+
+    .article2:hover .moreb{
+	    opacity:0;
+    }
+
+    .article3:hover .moreb{
+        opacity:0;
+    }
+
+    .article4:hover .moreb{
+        opacity:0;
+    }
+    .a_right{
+        padding: 6%;
+    }
+    .a_right h2{
+        font-size: 2rem;
+    }
+    .a_right p{
+        font-size: 15px;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
