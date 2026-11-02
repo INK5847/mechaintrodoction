@@ -576,7 +576,13 @@ footer{
     .a_right p{
         font-size: 15px;
     }
-    footer{
+    .up{
+        padding:10px;
+        right:3%; 
+        bottom:10%;
         font-size: 15px;
+    }
+    footer{
+        font-size: 12px;
     }
 }

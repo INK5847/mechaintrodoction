@@ -449,10 +449,6 @@ footer{
     article{
         flex-direction: column;
     }
-    section > a:nth-of-type(2n) article{
-        flex-direction: column;
-    }
-
     .a_right{
         padding: 6%;
     }
@@ -462,7 +458,27 @@ footer{
     .a_right p{
         font-size: 15px;
     }
-    footer{
+    .article2{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .article .a_left2{
+        padding: 6%;
+    }
+    .a_left2 h2{
+        font-size: 2rem;
+    }
+    .a_left2 p{
         font-size: 15px;
+    }
+    .up{
+        padding:10px;
+        right:3%; 
+        bottom:10%;
+        font-size: 15px;
+    }
+
+    footer{
+        font-size: 12px;
     }
 }
