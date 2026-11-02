@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -421,9 +425,21 @@ section h1{
 	opacity:1;
 }
 
+.up{
+    position: fixed;
+    right:3%; 
+    bottom:5%;
 
+    border-radius: 50px;
+	background:#272D87;
+	padding:30px;
+	color: #FFFFFF;
+}
 
-
+.up:hover{
+    color: #ECECEC;
+    background:#585FBE;
+}
 
 /*footer*/
 footer{
