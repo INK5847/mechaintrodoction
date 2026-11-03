@@ -40,9 +40,9 @@ header{
 
 /*menu*/
 .menu{
-    width:80%;
-    margin: 10px auto;
-    /*background:#ffffff;*/
+    width:100%;
+    margin: 0px auto;
+    background:#ffffff;
     display: flex;
 }
 
@@ -51,22 +51,22 @@ header{
    /* float: left;
     width: 120px;*/
     flex: 0 0 120px;
-    
+    margin-left: 10%;
 }
 
-.logo img{
+/*.logo img{
     width: 100%;
     margin: auto;
-    /*background: rgba(255, 255, 255, .5);*/
+    background: rgba(255, 255, 255, .5);
 	border-radius: 50%;
-}
+}*/
 
 /*nav*/
 nav{
     /* float: right;*/
     flex: 1;
     text-align: right;
-    
+    margin-right: 10%;
 }
 
 nav a{
@@ -379,6 +379,110 @@ section h1{
 	text-align:justify;
     line-height: 2rem;
 }
+
+.article1:hover .a_left{
+  display: none; /* 隱藏 */
+}
+
+.article1:hover .a_right{
+  display: none; /* 隱藏 */
+}
+
+.article2:hover .a_left{
+  display: none; /* 隱藏 */
+}
+
+.article2:hover .a_right{
+  display: none; /* 隱藏 */
+}
+
+.article3:hover .a_left{
+  display: none; /* 隱藏 */
+}
+
+.article3:hover .a_right{
+  display: none; /* 隱藏 */
+}
+
+.article4:hover .a_left{
+  display: none; /* 隱藏 */
+}
+
+.article4:hover .a_right{
+  display: none; /* 隱藏 */
+}
+
+.a_left2{
+    flex: 1;
+    
+    /*position: relative;
+	float:left;
+	width:50%;
+    height:100%;*/
+}
+
+.a_left2 img{
+	float:left;
+    width: 100%;
+    height:100%;
+	object-fit: cover;
+    object-position: bottom;
+    
+}
+
+.a_right2{
+    flex: 1;
+    position: relative;
+	/*float:left;
+	width:50%;
+    height:100%;*/
+	padding: 4%;
+	box-sizing:border-box;
+	color:#A43528;
+	text-align:justify;
+    line-height: 2rem;
+}
+
+.a_left2{
+  display: none; /* 預設完全隱藏 */
+}
+
+.a_right2{
+  display: none; /* 預設完全隱藏 */
+}
+
+.article1:hover .a_left2{
+  display: block; /* 顯示 */
+}
+
+.article1:hover .a_right2{
+  display: block; /* 顯示 */
+}
+
+.article2:hover .a_left2{
+  display: block; /* 顯示 */
+}
+
+.article2:hover .a_right2{
+  display: block; /* 顯示 */
+}
+
+.article3:hover .a_left2{
+  display: block; /* 顯示 */
+}
+
+.article3:hover .a_right2{
+  display: block; /* 顯示 */
+}
+
+.article4:hover .a_left2{
+  display: block; /* 顯示 */
+}
+
+.article4:hover .a_right2{
+  display: block; /* 顯示 */
+}
+
 .moreb{
 	position:absolute;
 	top: 85%;
@@ -398,19 +502,7 @@ section h1{
 	-webkit-transition-timing-function: ease-in-out; /*Safari */
 }
 
-.article1:hover .moreb{
-	opacity:1;
-}
-
-.article2:hover .moreb{
-	opacity:1;
-}
-
-.article3:hover .moreb{
-	opacity:1;
-}
-
-.article4:hover .moreb{
+.a_right2:hover .moreb{
 	opacity:1;
 }
 
@@ -421,6 +513,18 @@ section h1{
 }
 
 .a_right h3{
+    line-height: 1rem;
+    font-size: 1.5rem;
+    color: #E86E65;
+}
+
+.a_right2 h3{
+    line-height: 1rem;
+    font-size: 1.5rem;
+    color: #E86E65;
+}
+
+.a_right2 h4{
     line-height: 1rem;
     font-size: 1.5rem;
     color: #E86E65;
