@@ -40,9 +40,9 @@ header{
 
 /*menu*/
 .menu{
-    width:100%;
-    margin: 0px auto;
-    background:#ffffff;
+    width:80%;
+    margin: 10px auto;
+    /*background:#ffffff;*/
     display: flex;
 }
 
@@ -51,22 +51,22 @@ header{
    /* float: left;
     width: 120px;*/
     flex: 0 0 120px;
-    margin-left: 10%;
+    
 }
 
-/*.logo img{
+.logo img{
     width: 100%;
     margin: auto;
-    background: rgba(255, 255, 255, .5);
+    /*background: rgba(255, 255, 255, .5);*/
 	border-radius: 50%;
-}*/
+}
 
 /*nav*/
 nav{
     /* float: right;*/
     flex: 1;
     text-align: right;
-    margin-right: 10%;
+    
 }
 
 nav a{
@@ -682,6 +682,70 @@ footer{
     .a_right p{
         font-size: 15px;
     }
+    .article1:hover .a_left{
+        display: block; /* 顯示 */
+    }
+
+    .article1:hover .a_right{
+        display: block; /* 顯示 */
+    }
+
+    .article2:hover .a_left{
+        display: block; /* 顯示 */
+    }
+
+    .article2:hover .a_right{
+        display: block; /* 顯示 */
+    }
+
+    .article3:hover .a_left{
+        display: block; /* 顯示 */
+    }
+
+    .article3:hover .a_right{
+        display: block; /* 顯示 */
+    }
+
+    .article4:hover .a_left{
+        display: block; /* 顯示 */
+    }
+
+    .article4:hover .a_right{
+        display: block; /* 顯示 */
+    }
+    
+    .article1:hover .a_left2{
+        display: none; 
+    }
+
+    .article1:hover .a_right2{
+        display: none; 
+    }
+
+    .article2:hover .a_left2{
+        display: none; 
+    }
+
+    .article2:hover .a_right2{
+        display: none; 
+    }
+
+    .article3:hover .a_left2{
+        display: none; 
+    }
+
+    .article3:hover .a_right2{
+        display: none; 
+    }
+
+    .article4:hover .a_left2{
+        display: none; 
+    }
+
+    .article4:hover .a_right2{
+        display: none; 
+    }
+
     .up{
         padding:10px;
         right:3%; 

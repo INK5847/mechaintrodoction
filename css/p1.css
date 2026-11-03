@@ -39,11 +39,10 @@ header{
 
 /*menu*/
 .menu{
-    width:100%;
-    margin: 0px auto;
+    width: 80%;
+    margin: 10px auto;
     /*background:#ffffff;*/
     display: flex;
-    background-color: #FFFFFF;
 }
 
 /*logo*/
@@ -51,7 +50,6 @@ header{
    /* float: left;
     width: 120px;*/
     flex: 0 0 120px;
-    margin-left: 10%;
     
 }
 
@@ -67,7 +65,6 @@ nav{
     /* float: right;*/
     flex: 1;
     text-align: right;
-    margin-right: 10%;
 }
 
 nav a{
@@ -452,6 +449,11 @@ footer{
         font-size: 12px;
         white-space: nowrap;/*不換行*/
         margin-top: 60px;
+    }
+    .marquee-track{
+        display: flex;
+        width: max-content;
+        animation: marquee 40s linear infinite;/*名稱 秒數 移動方式 播放次數*/
     }
     section{
         width: 90%;
