@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-html{
+html{/*捲動行為，前往指定位置的方式*/
     scroll-behavior: smooth;
 }
 
@@ -123,13 +123,13 @@ nav a:hover{
 
 .marquee-track{
     display: flex;
-    width: max-content;
+    width: max-content;/*寬度等於內容寬度*/
     animation: marquee 25s linear infinite;/*名稱 秒數 移動方式 播放次數*/
 }
 
 @keyframes marquee{
     from {
-        transform: translateX(0);
+        transform: translateX(0);/*水平方向移動*/
     }
     to {
         transform: translateX(-50%);
